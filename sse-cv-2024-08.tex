@@ -1,0 +1,287 @@
+%-------------------------
+% Resume in Latex
+% Author : Kyle Capehart
+% License : MIT
+% Inspired by: https://github.com/arasgungore/arasgungore-CV
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\usepackage[dvipsnames]{xcolor}
+\input{glyphtounicode}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+\usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+% \usepackage[default]{lato}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bf\color{NavyBlue}
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+%---------- HEADING ----------
+
+\begin{center}
+    \textbf{\Huge \color{NavyBlue} Ishara Dilshan $|$ Software Engineer} \\ \vspace{10pt}
+    \faPhoneSquare \hspace{.5pt} {+94717809280}
+    $|$
+    \faEnvelope \hspace{.5pt} \href{mailto:isharadilshandev@gmail.com}{isharadilshandev@gmail.com}
+    $|$
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/isharadilshan/}{in/isharadilshan}
+    $|$
+    \faGithub \hspace{.5pt} \href{https://github.com/isharadilshan}{isharadilshan}
+    $|$
+    \faStackOverflow \hspace{.5pt} \href{https://stackoverflow.com/users/7469665/ishara-dilshan}{ishara-dilshan}
+\end{center}
+
+%----------- EXPERIENCE -----------
+
+\section{Experience}
+  \vspace{16pt}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Sr. Software Engineer @ Swivel Group  $|$  \footnotesize{\emph{\href{https://swivelgroup.com.au}{swivelgroup.com.au}}}}{\color{orange}Aug 2022 \textbf{--} Present}
+      \vspace{2pt}
+        \resumeItemListStart
+            \resumeItem{Technical lead for a team of Salesforce professionals}
+            \resumeItem{Created an automated testing framework with Apex for flows and triggers}
+            \resumeItem{Automated CI/CD pipeline with GitHub Actions to scan and deploy code}
+            \resumeItem{Enabled integration between Salesforce, Jira, and Slack}
+            \resumeItem{Worked on user sign-up service built with Python back-end and Angular front-end}
+            \resumeItem{Helped implement e-commerce solutions in SAP Hybris using Java}
+        \resumeItemListEnd
+        \vspace{16pt}
+
+    \resumeSubheading
+      {Sr. Software Engineer @ Arimac $|$  \footnotesize{\emph{\href{https://arimaclanka.com}{arimaclanka.com}}}}{\color{orange}July 2021 \textbf{--} Aug 2022}
+      \vspace{4pt}
+        \resumeItemListStart
+            \resumeItem{Actively contributed to the development of a cross-platform mobile application in React Native for DU Mobile, the primary telecommunications provider in the UAE.}\href{https://play.google.com/store/apps/details?id=duleaf.duapp.splash}{\color{blue}https://play.google.com/store/apps/details?id=duleaf.duapp.splash}
+            \resumeItem{Integrated Firebase services such as \textbf{Crashlytics}, \textbf{Analytics}, \textbf{Dynamic Links}, and \textbf{Remote Config} into the project for optimal performance and data analysis.}
+            \resumeItem{Responsible for the development of  animation feature using \textbf{Lottie} for both iOS and Android platforms.}
+        \resumeItemListEnd
+        \vspace{16pt}
+
+    \resumeSubheading
+      {Software Engineer @ ObjectOne pvt Ltd $|$  \footnotesize{\emph{\href{https://www.objectoneworld.com}{objectoneworld.com}}}}{\color{orange}July 2020 \textbf{--} July 2021}
+      \vspace{4pt}
+        \resumeItemListStart
+            \resumeItem{Actively contributed to the development of a cross-platform self-care application (Ncell-Saathi) for Dialog Axiata in Nepal.}\href{https://play.google.com/store/apps/details?id=com.mventus.ncell.activity}{\color{blue}https://play.google.com/store/apps/details?id=com.mventus.ncell.activity}
+            \resumeItem{Responsible for deploying applications to the Google Play Store using Microsoft AppCenter and to the Apple App Store utilizing Xcode.}
+            \resumeItem{Implemented the CodePush service integration for seamless deployment of application updates directly to end users.}
+        \resumeItemListEnd
+        \vspace{16pt}
+
+    \resumeSubheading
+      {Associate Software Engineer @ Zegates International $|$ \footnotesize{\emph{\href{https://zegates.com/}{zegates.com}}}}{\color{orange}Feb 2020 \textbf{--} July 2020}
+      \vspace{4pt}
+        \resumeItemListStart
+            \resumeItem{Developed React-Native/Redux code using functional programming best practices and reusable components}
+            \resumeItem{Experience with integrating REST APIs and GraphQL.}
+            \resumeItem{Worked on projects for clients including healthcare, finance, and e-commerce}
+        \resumeItemListEnd
+        \vspace{16pt}
+
+    \resumeSubheading
+      {Trainee Software Engineer @ Infor $|$  \footnotesize{\emph{\href{https://infor.com/}{infor.com}}}}{\color{orange}Aug 2019 \textbf{--} Feb 2020}
+      \vspace{4pt}
+        \resumeItemListStart
+            \resumeItem{Developed and maintained automated CI/CD pipelines for code analysis and deployment using Jenkins, Sonarqube, and GitLab API}
+            \resumeItem{Contributed to version upgrade of an Ionic project.}
+            \resumeItem{Implemented NPM library to reduce codebase size for internal JavaScript framework.}
+        \resumeItemListEnd
+        \vspace{16pt}
+    
+  \resumeSubHeadingListEnd
+
+
+%----------- PROJECTS -----------
+\vspace{48pt}
+\section{Projects}
+    \vspace{16pt}
+    \resumeSubHeadingListStart
+      
+      \resumeProjectHeading
+        {\textbf{Outopia} $|$ \emph{\href{https://www.outopia.ch}{\color{blue}outopia.ch}}}{}
+          \resumeItemListStart
+            \resumeItem{Switzerland based startup travel company website written in react and tailwindcss}
+            \resumeItem{Implemented Admin panel and added tailwindcss framework and localization support for the main website}
+          \resumeItemListEnd
+      
+      \resumeProjectHeading
+        {\textbf{RN npm module} $|$ \emph{\href{https://www.npmjs.com/package/react-native-typewritter}{\color{blue}react-native-typewritter}}}{}
+          \resumeItemListStart
+            \resumeItem{A simple component for adding a nice typewriter effect to your react native project.}
+            \resumeItem{Includes a number of pre-defined templates using well known apex design patterns}
+          \resumeItemListEnd
+      
+      \resumeProjectHeading
+        {\textbf{Resum shortlisting platform}}{}
+          \resumeItemListStart
+            \resumeItem{Contributed to resum shortlisting platform admin portal web application development in Next.JS}
+            \resumeItem{Custodian of the Lightning Flow Scanner, a collection of tools used to scan Salesforce flows to enforce best practices}
+          \resumeItemListEnd
+      
+    \resumeSubHeadingListEnd
+
+
+%----------- EDUCATION & CERTIFICATIONS -----------
+\vspace{8pt}
+\section{Education \& Certifications}
+  \vspace{16pt}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {University of Colombo School of Computing}{}
+      \resumeSubSubheading{B.Sc in Computer Science}{\color{orange}Jan 2020}
+    \vspace{7pt}
+
+    \resumeSubheading
+      {Sri Lanka Vocational Training Center, Dehiwala}{}
+      \resumeSubSubheading{Diploma in Networking and Computer Hardware}{\color{orange}July 2018}
+
+  \resumeSubHeadingListEnd
+
+  %----------- SKILLS -----------
+\vspace{8pt}
+\section{Skills}
+\vspace{2pt}
+\resumeSubHeadingListStart
+  \small{\item{
+      
+      \textbf{Frontend:}{ React, Next.JS, React Native, Android } \\ \vspace{3pt}
+
+      \textbf{Backend:}{ Node, Laravel } \\ \vspace{3pt}
+      
+      \textbf{DevOps:}{ Github Actions, Jenkins, Fastlane, Appcenter } \\ \vspace{3pt}
+
+      \textbf{Databases:}{ MySql, MongoDB, Firebase firestore } \\ \vspace{3pt}
+
+      \textbf{Testing:}{ JIRA, Trello } \\ \vspace{3pt}
+
+      \textbf{SDLC:}{ Jest, Detox } \\ \vspace{3pt}
+      
+  }}
+\resumeSubHeadingListEnd
+
+%----------- REFERENCES -----------
+\vspace{8pt}
+\section{References}
+  \vspace{16pt}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Kasun Gunawardena - Senior Lecturer - University of Colombo}{}
+      \resumeSubSubheading{kgg@ucsc.cmb.ac.lk}{}
+      \resumeSubSubheading{0112 - 158 971}{}
+      \vspace{16pt}
+
+    \resumeSubheading
+      {Duminda Gunawardena - Manager Software Development - Infor}{}
+      \resumeSubSubheading{duminda.gunawardena@infor.com}{}
+      \resumeSubSubheading{0114 - 768 300 ext:28421}{}
+
+  \resumeSubHeadingListEnd
+
+\end{document}
